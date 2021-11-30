@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateStoreCoverImages extends Migration
+class CreateOrderfulfillmentSuppliersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,12 @@ class CreateStoreCoverImages extends Migration
      */
     public function up()
     {
-        Schema::create('store_cover_images', function (Blueprint $table) {
+        Schema::create('orderfulfillment_suppliers', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('store_setting_id')->index('store_setting_id')->nullable()->constrained('store_settings');
-            $table->string('image','150')->nullable();
+            $table->string('name', 250);
+            $table->string('company_name', 250);
+            $table->string('phone', 20);
+            $table->string('address', 250);
             $table->unsignedInteger('created_by')->nullable();
             $table->softDeletes();
             $table->timestamps();
@@ -31,7 +33,7 @@ class CreateStoreCoverImages extends Migration
     public function down()
     {
         DB::statement('SET FOREIGN_KEY_CHECKS = 0');
-        Schema::dropIfExists('store_cover_images');
+        Schema::dropIfExists('orderfulfillment_suppliers');
         DB::statement('SET FOREIGN_KEY_CHECKS = 1');
     }
 }
