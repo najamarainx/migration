@@ -49,6 +49,8 @@ class CreateStoreSettingsTable extends Migration
             $table->string('zip_code')->nullable();
             $table->string('country')->nullable();
             $table->boolean('status')->default('1');
+            $table->string('theme')->nullable();
+            $table->string('theme_color')->nullable();
             $table->text('about_us')->nullable();
             $table->text('terms_condition')->nullable();
             $table->text('returns_exchange')->nullable();
