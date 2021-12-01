@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\OrderFulfillmentPermission;
 use Carbon\Carbon;
 use DB;
 
@@ -22,11 +23,13 @@ class OrderFulfillmentRoleSeeder extends Seeder
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
         ];
         $id = DB::table('orderfulfillment_roles')->insertGetId($roleData);
+        OrderFulfillmentPermission::assignPermission($id);
         $roleData = [
             'id' => 2,
             'name' => 'Super Admin',
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
         ];
-        DB::table('orderfulfillment_roles')->insertGetId($roleData);
+        $id = DB::table('orderfulfillment_roles')->insertGetId($roleData);
+        OrderFulfillmentPermission::assignPermission($id);
     }
 }
