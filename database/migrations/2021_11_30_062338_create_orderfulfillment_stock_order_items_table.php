@@ -16,6 +16,7 @@ class CreateOrderfulfillmentStockOrderItemsTable extends Migration
         Schema::create('orderfulfillment_stock_order_items', function (Blueprint $table) {
             $table->id();
             $table->foreignId('stock_order_id')->constrained('orderfulfillment_stock_orders');
+            $table->foreignId('department_id')->constrained('orderfulfillment_departments');
             $table->foreignId('item_id')->constrained('orderfulfillment_items');
             $table->foreignId('variant_id')->constrained('orderfulfillment_variants');
             $table->decimal('per_unit_price',10,2)->nullable();

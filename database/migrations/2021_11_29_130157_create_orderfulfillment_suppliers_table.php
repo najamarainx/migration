@@ -18,6 +18,7 @@ class CreateOrderfulfillmentSuppliersTable extends Migration
             $table->string('name', 250);
             $table->string('company_name', 250);
             $table->string('phone', 20);
+            $table->string('company_phone', 20);
             $table->string('address', 250);
             $table->unsignedInteger('created_by')->nullable();
             $table->softDeletes();

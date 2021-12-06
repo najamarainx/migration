@@ -19,6 +19,7 @@ class CreateOrderfulfillmentInventoryItemsTable extends Migration
             $table->foreignId('item_id')->constrained('orderfulfillment_items');
             $table->foreignId('variant_id')->constrained('orderfulfillment_variants');
             $table->decimal('qty',12,2)->nullable();
+            $table->unsignedInteger('created_by')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

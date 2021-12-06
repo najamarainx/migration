@@ -1,0 +1,43 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateOrderfulfillmentBookings extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('orderfulfillment_bookings', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('category_id')->index('category_id')->nullable()->constrained('orderfulfillment_categories');
+            $table->date('date');
+            $table->foreignId('time_slot_id')->index('time_slot_id')->nullable()->constrained('orderfulfillment_time_slots');
+            $table->string('first_name',150)->nullable();
+            $table->string('last_name',150)->nullable();
+            $table->string('email',150)->nullable();
+            $table->string('phone_number',20)->nullable();
+            $table->string('post_code',20)->nullable();
+            $table->text('address')->nullable();
+            $table->text('message')->nullable();
+            $table->enum('status',['pending'])->nullable();
+            $table->softDeletes();
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('orderfulfillment_bookings');
+    }
+}

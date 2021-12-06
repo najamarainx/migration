@@ -16,9 +16,9 @@ class CreateOrderfulfillmentStockOrdersTable extends Migration
         Schema::create('orderfulfillment_stock_orders', function (Blueprint $table) {
             $table->id();
             $table->foreignId('supplier_id')->constrained('orderfulfillment_suppliers');
-            $table->foreignId('department_id')->constrained('orderfulfillment_departments');
             $table->decimal('total_price',10,2)->nullable();
             $table->decimal('qty',12,2)->nullable();
+            $table->unsignedInteger('created_by')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });
