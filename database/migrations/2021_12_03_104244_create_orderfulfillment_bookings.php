@@ -18,6 +18,7 @@ class CreateOrderfulfillmentBookings extends Migration
             $table->foreignId('category_id')->index('category_id')->nullable()->constrained('orderfulfillment_categories');
             $table->date('date');
             $table->foreignId('time_slot_id')->index('time_slot_id')->nullable()->constrained('orderfulfillment_time_slots');
+            $table->foreignId('zip_code_id')->index('zip_code_id')->nullable()->constrained('orderfulfillment_zip_codes');
             $table->string('first_name',150)->nullable();
             $table->string('last_name',150)->nullable();
             $table->string('email',150)->nullable();
@@ -26,6 +27,7 @@ class CreateOrderfulfillmentBookings extends Migration
             $table->text('address')->nullable();
             $table->text('message')->nullable();
             $table->enum('status',['pending'])->nullable();
+            $table->unsignedInteger('created_by')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

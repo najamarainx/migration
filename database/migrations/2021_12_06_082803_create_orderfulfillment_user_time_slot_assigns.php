@@ -18,6 +18,7 @@ class CreateOrderfulfillmentUserTimeSlotAssigns extends Migration
             $table->foreignId('time_slot_id')->index('time_slot_id')->nullable()->constrained('orderfulfillment_time_slots');
             $table->foreignId('zip_code_id')->index('zip_code_id')->nullable()->constrained('orderfulfillment_zip_codes');
             $table->foreignId('user_id')->index('user_id')->nullable()->constrained('orderfulfillment_users');
+            $table->unsignedInteger('created_by')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

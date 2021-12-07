@@ -15,7 +15,6 @@ class CreateOrderfulfillmentTimeSlots extends Migration
     {
         Schema::create('orderfulfillment_time_slots', function (Blueprint $table) {
             $table->id();
-            $table->date('booking_date');
             $table->time('booking_from_time');
             $table->time('booking_to_time');
             $table->string('slot_limit',120);
