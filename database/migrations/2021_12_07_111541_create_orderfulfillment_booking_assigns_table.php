@@ -18,6 +18,7 @@ class CreateOrderfulfillmentBookingAssignsTable extends Migration
             $table->foreignId('booking_id')->index('booking_id')->nullable()->constrained('orderfulfillment_bookings');
             $table->unsignedInteger('slot_id')->index('slot_id')->nullable();
             $table->unsignedInteger('user_id')->index('user_id')->nullable();
+            $table->date('date')->nullable();
             $table->unsignedInteger('created_by')->nullable();
             $table->softDeletes();
             $table->timestamps();
