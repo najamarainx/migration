@@ -26,7 +26,7 @@ class CreateOrderfulfillmentBookings extends Migration
             $table->string('post_code',20)->nullable();
             $table->text('address')->nullable();
             $table->text('message')->nullable();
-            $table->enum('status',['pending'])->nullable();
+            $table->enum('booking_status',['not_called','confirmed','rescheduled','not_respond','cancelled'])->default('not_called')->nullable();
             $table->unsignedInteger('created_by')->nullable();
             $table->softDeletes();
             $table->timestamps();
