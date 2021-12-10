@@ -19,6 +19,7 @@ class CreateOrderfulfillmentStockOrdersTable extends Migration
             $table->decimal('total_price',10,2)->nullable();
             $table->decimal('qty',12,2)->nullable();
             $table->unsignedInteger('created_by')->nullable();
+            $table->tinyInteger('is_verified')->default(0);
             $table->softDeletes();
             $table->timestamps();
         });

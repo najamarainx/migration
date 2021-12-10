@@ -19,6 +19,7 @@ class CreateOrderfulfillmentBookingAssignsTable extends Migration
             $table->unsignedInteger('slot_id')->index('slot_id')->nullable();
             $table->unsignedInteger('user_id')->index('user_id')->nullable();
             $table->date('date')->nullable();
+            $table->enum('assign_status',['pending', 'in progress', 'not respond', 'completed'])->default('pending')->nullable();
             $table->unsignedInteger('created_by')->nullable();
             $table->softDeletes();
             $table->timestamps();
