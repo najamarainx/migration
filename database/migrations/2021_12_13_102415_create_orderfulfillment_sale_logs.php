@@ -16,6 +16,7 @@ class CreateOrderfulfillmentSaleLogs extends Migration
         Schema::create('orderfulfillment_sale_logs', function (Blueprint $table) {
             $table->id();
             $table->foreignId('order_id')->index('order_id')->nullable()->constrained('orders');
+            $table->foreignId('product_id')->index('product_id')->nullable();
             $table->foreignId('department_id')->index('department_id')->nullable();
             $table->foreignId('item_id')->index('item_id')->nullable();
             $table->foreignId('variant_id')->index('variant_id')->nullable();
