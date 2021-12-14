@@ -36,6 +36,7 @@ class CreateOrdersTable extends Migration
             $table->enum('status',['pending','declined','approved'])->default('pending');
             $table->enum('payment',['verified','unverified'])->default('unverified');
             $table->enum('payment_type',['partial','full'])->default('full')->nullable();
+            $table->tinyInteger('is_verified')->unsigned()->default(0);
             $table->softDeletes();
             $table->timestamps();
 
