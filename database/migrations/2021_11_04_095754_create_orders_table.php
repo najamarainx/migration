@@ -21,6 +21,8 @@ class CreateOrdersTable extends Migration
             $table->string('name',100)->nullable();
             $table->string('email',150)->nullable();
             $table->string('phone',20)->nullable();
+            $table->string('country_short_name',10)->nullable();
+            $table->string('country_short_code',10)->nullable();
             $table->decimal('total_price',10,2)->nullable();
             $table->decimal('paid_amount',10,2)->nullable();
             $table->decimal('paid_percentage',10,2)->nullable();
@@ -50,8 +52,6 @@ class CreateOrdersTable extends Migration
      */
     public function down()
     {
-        DB::statement('SET FOREIGN_KEY_CHECKS = 0');
         Schema::dropIfExists('orders');
-        DB::statement('SET FOREIGN_KEY_CHECKS = 1');
     }
 }

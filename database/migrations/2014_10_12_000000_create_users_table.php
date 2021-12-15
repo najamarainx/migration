@@ -20,6 +20,8 @@ class CreateUsersTable extends Migration
             $table->string('u_name', 150)->nullable();
             $table->string('email', 150);
             $table->string('phone_number', 25)->nullable();
+            $table->string('country_short_name', 25)->nullable();
+            $table->string('country_short_code', 25)->nullable();
             $table->string('cnic', 50)->nullable()->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password', 191);

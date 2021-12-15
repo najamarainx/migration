@@ -17,7 +17,7 @@ class CreateStoresTable extends Migration
             $table->id();
             $table->foreignId('contract_id')->index('contract_id')->constrained('contracts');
             $table->string('name','500')->nullable();
-            $table->string('slug','100')->nullable();
+           // $table->string('slug','100')->nullable();
              $table->text('address')->nullable();
             $table->unsignedInteger('added_by')->nullable();
             $table->softDeletes();
