@@ -35,7 +35,7 @@ class CreateOrdersTable extends Migration
             $table->text('card_number',20)->nullable();
             $table->text('card_exp_month',20)->nullable();
             $table->text('card_exp_year',20)->nullable();
-            $table->enum('status',['pending','declined','approved'])->default('pending');
+            $table->enum('status',['pending','declined','approved','assigned inventory','production','assembling','packing','installation','completed'])->default('pending');
             $table->enum('payment',['verified','unverified'])->default('unverified');
             $table->enum('payment_type',['partial','full'])->default('full')->nullable();
             $table->tinyInteger('is_verified')->unsigned()->default(0);

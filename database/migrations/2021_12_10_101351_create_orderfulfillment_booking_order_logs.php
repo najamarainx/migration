@@ -16,7 +16,6 @@ class CreateOrderfulfillmentBookingOrderLogs extends Migration
         Schema::create('orderfulfillment_booking_order_logs', function (Blueprint $table) {
             $table->id();
             $table->unsignedInteger('user_id')->index('user_id')->nullable();
-            $table->unsignedInteger('category_id')->index('category_id');
             $table->unsignedInteger('store_id')->index('store_id');
             $table->unsignedInteger('booking_id')->index('booking_id');
             $table->string('name',100)->nullable();
