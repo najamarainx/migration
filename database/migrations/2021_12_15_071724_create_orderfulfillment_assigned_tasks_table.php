@@ -17,6 +17,7 @@ class CreateOrderfulfillmentAssignedTasksTable extends Migration
             $table->id();
             $table->foreignId('task_id')->index('task_id')->nullable()->constrained('orderfulfillment_sale_logs');
             $table->foreignId('user_id')->index('user_id')->nullable()->constrained('orderfulfillment_users');
+            $table->unsignedInteger('added_by')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

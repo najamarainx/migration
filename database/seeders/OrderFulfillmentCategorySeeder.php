@@ -29,6 +29,12 @@ class OrderFulfillmentCategorySeeder extends Seeder
             ['id' => '11', 'name' => 'StockPurchase', 'type' => 'permission', 'added_by' => 1, 'updated_by' => 1, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'), 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
             ['id' => '12', 'name' => 'TimeSlot', 'type' => 'permission', 'added_by' => 1, 'updated_by' => 1, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'), 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
             ['id' => '13', 'name' => 'Booking', 'type' => 'permission', 'added_by' => 1, 'updated_by' => 1, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'), 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+            ['id' => '14', 'name' => 'Worker Screen', 'type' => 'permission', 'added_by' => 1, 'updated_by' => 1, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'), 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+            ['id' => '15', 'name' => 'Tasks', 'type' => 'permission', 'added_by' => 1, 'updated_by' => 1, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'), 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+            ['id' => '16', 'name' => 'orders', 'type' => 'permission', 'added_by' => 1, 'updated_by' => 1, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'), 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+            ['id' => '17', 'name' => 'User slots', 'type' => 'permission', 'added_by' => 1, 'updated_by' => 1, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'), 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+            ['id' => '18', 'name' => 'Measurement Order', 'type' => 'permission', 'added_by' => 1, 'updated_by' => 1, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'), 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+            ['id' => '19', 'name' => 'Measurement Task', 'type' => 'permission', 'added_by' => 1, 'updated_by' => 1, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'), 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
 
 
 

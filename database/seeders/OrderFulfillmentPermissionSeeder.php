@@ -84,6 +84,44 @@ class OrderFulfillmentPermissionSeeder extends Seeder
             ['name' => 'editBooking', 'category_id' =>13, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
             ['name' => 'deleteBooking', 'category_id' =>13, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
             ['name' => 'confirmedBooking', 'category_id' =>13, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+            ['name' => 'bookingAssign', 'category_id' =>13, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+            ['name' => 'updateStatus', 'category_id' =>13, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+
+            ['name' => 'workerTask', 'category_id' =>14, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+            ['name' => 'updateWorkerTask', 'category_id' =>14, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+            ['name' => 'updateWorkerTaskList', 'category_id' =>14, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+
+            ['name' => 'taskList', 'category_id' =>15, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+            ['name' => 'taskInfo', 'category_id' =>15, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+            ['name' => 'assignTask', 'category_id' =>15, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+            ['name' => 'completedTask', 'category_id' =>15, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+
+            ['name' => 'pendingOrder', 'category_id' =>16, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+            ['name' => 'orderList', 'category_id' =>16, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+            ['name' => 'completedOrder', 'category_id' =>16, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+            ['name' => 'orderDetail', 'category_id' =>16, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+            ['name' => 'AssignedProductInventory', 'category_id' =>16, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+            ['name' => 'AssignedProductInventory', 'category_id' =>16, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+            ['name' => 'itemsVariant', 'category_id' =>16, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+            ['name' => 'itemsQuantity', 'category_id' =>16, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+            ['name' => 'SaleInventory', 'category_id' =>16, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+            ['name' => 'ProductInventoryList', 'category_id' =>16, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+            ['name' => 'logItemDelete', 'category_id' =>16, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+            ['name' => 'logItemUpdate', 'category_id' =>16, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+
+            ['name' => 'zipUserList', 'category_id' =>17, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+            ['name' => 'storeUserSlot', 'category_id' =>17, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+
+            ['name' => 'orderDetail', 'category_id' =>18, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+            ['name' => 'orderCategory', 'category_id' =>18, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+            ['name' => 'productMinPrices', 'category_id' =>18, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+            ['name' => 'storeOrder', 'category_id' =>18, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+            ['name' => 'orderItem', 'category_id' =>18, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+
+            ['name' => 'taskList', 'category_id' =>19, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+            ['name' => 'asssignList', 'category_id' =>19, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+            ['name' => 'updateStatus', 'category_id' =>19, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+            ['name' => 'bookingDetail', 'category_id' =>19, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
 
 
 

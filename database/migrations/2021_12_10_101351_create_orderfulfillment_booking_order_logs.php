@@ -38,6 +38,8 @@ class CreateOrderfulfillmentBookingOrderLogs extends Migration
             $table->enum('payment',['verified','unverified'])->default('unverified');
             $table->enum('payment_type',['partial','full'])->default('full')->nullable();
             $table->tinyInteger('is_verified')->unsigned()->default(0);
+            $table->tinyInteger('is_verified')->unsigned()->default(0);
+            $table->unsignedInteger('created_by')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

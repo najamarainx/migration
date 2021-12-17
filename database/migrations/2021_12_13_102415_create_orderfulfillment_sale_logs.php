@@ -21,7 +21,7 @@ class CreateOrderfulfillmentSaleLogs extends Migration
             $table->foreignId('item_id')->index('item_id')->nullable();
             $table->foreignId('variant_id')->index('variant_id')->nullable();
             $table->decimal('qty',10,2)->nullable();
-            $table->enum('status',['pending', 'in progress', 'not respond', 'completed'])->default('pending')->nullable();
+            $table->enum('status',['pending','assigned', 'in progress', 'not respond', 'completed'])->default('pending')->nullable();
             $table->unsignedInteger('created_by')->nullable();
             $table->tinyInteger('is_verified')->default('0');
             $table->softDeletes();
