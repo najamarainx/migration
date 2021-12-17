@@ -26,6 +26,7 @@ class CreateOrderItemsTable extends Migration
             $table->decimal('qty',10,2)->nullable();
             $table->decimal('price',10,2)->nullable();
             $table->string('customer_note',200)->nullable();
+			$table->enum('status',['pending','in progress','completed'])->default('pending');
             $table->softDeletes();
             $table->timestamps();
         });
