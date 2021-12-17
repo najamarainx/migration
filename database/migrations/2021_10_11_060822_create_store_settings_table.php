@@ -17,11 +17,11 @@ class CreateStoreSettingsTable extends Migration
             $table->id();
             $table->foreignId('store_id')->index('store_id')->nullable()->constrained('stores');
             // $table->string('title', 250)->nullable();
-            $table->string('slug', 250)->nullable();
-            $table->string('host', 250)->nullable();
-             // $table->string('store_link', 250)->nullable();
-            //$table->string('custom_domain', 250)->nullable();
-            //$table->string('sub_domain', 250)->nullable();
+                $table->string('slug', 250)->nullable();
+                $table->string('host', 250)->nullable();
+              $table->string('store_link', 250)->nullable();
+              $table->string('custom_domain', 250)->nullable();
+             $table->string('sub_domain', 250)->nullable();
             $table->text('description')->nullable();
             $table->text('keywords')->nullable();
             $table->string('logo_path', 500)->nullable();
