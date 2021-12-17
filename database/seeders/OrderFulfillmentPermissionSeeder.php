@@ -92,7 +92,7 @@ class OrderFulfillmentPermissionSeeder extends Seeder
 
         ];
 
-        DB::table('orderFulfillment_permissions')->insert($permissionData);
+        DB::table('orderfulfillment_permissions')->insert($permissionData);
 
     }
 }
