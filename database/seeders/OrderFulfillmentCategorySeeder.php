@@ -35,6 +35,7 @@ class OrderFulfillmentCategorySeeder extends Seeder
             ['id' => '17', 'name' => 'User slots', 'type' => 'permission', 'added_by' => 1, 'updated_by' => 1, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'), 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
             ['id' => '18', 'name' => 'Measurement Order', 'type' => 'permission', 'added_by' => 1, 'updated_by' => 1, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'), 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
             ['id' => '19', 'name' => 'Measurement Task', 'type' => 'permission', 'added_by' => 1, 'updated_by' => 1, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'), 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+            ['id' => '20', 'name' => 'Inventory', 'type' => 'permission', 'added_by' => 1, 'updated_by' => 1, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'), 'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
 
 
 

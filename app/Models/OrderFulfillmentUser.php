@@ -14,7 +14,7 @@ use Illuminate\Validation\Rules;
 class OrderFulfillmentUser extends Authenticatable
 {
 
-
+  protected $table = 'orderfulfillment_users';
     use HasApiTokens, HasFactory, Notifiable, SoftDeletes;
   /**
      * The attributes that are mass assignable.
