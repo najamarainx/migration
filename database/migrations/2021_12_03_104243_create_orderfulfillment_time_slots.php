@@ -17,7 +17,6 @@ class CreateOrderfulfillmentTimeSlots extends Migration
             $table->id();
             $table->time('booking_from_time');
             $table->time('booking_to_time');
-            $table->string('slot_limit',120);
             $table->enum('status',['active','inactive'])->default('active');
             $table->softDeletes();
             $table->timestamps();
