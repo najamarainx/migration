@@ -16,6 +16,7 @@ class CreateOrderfulfillmentVariantsTable extends Migration
         Schema::create('orderfulfillment_variants', function (Blueprint $table) {
             $table->id();
             $table->string('name', 50);
+            $table->unsignedInteger('item_id')->index()->nullable();
             $table->unsignedInteger('created_by')->nullable();
             $table->softDeletes();
             $table->timestamps();
