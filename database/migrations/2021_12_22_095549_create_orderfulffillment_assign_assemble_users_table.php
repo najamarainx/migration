@@ -18,6 +18,7 @@ class CreateOrderfulffillmentAssignAssembleUsersTable extends Migration
             $table->foreignId('order_id')->index('order_id')->constrained('orders');
             $table->foreignId('user_id')->index('user_id')->constrained('orderfulfillment_users');
             $table->unsignedInteger('added_by')->nullable()->index();
+            $table->enum('status',['pending','in progress','completed'])->default('pending');
             $table->softDeletes();
             $table->timestamps();
         });
