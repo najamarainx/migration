@@ -87,7 +87,9 @@ class OrderFulfillmentPermissionSeeder extends Seeder
             ['name' => 'bookingAssign', 'category_id' =>13, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
             ['name' => 'updateStatus', 'category_id' =>13, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
 
+            ['name' => 'departmentTaskInfo', 'category_id' =>15, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
             ['name' => 'departmentTask', 'category_id' =>15, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
+            ['name' => 'departmentAssignTask', 'category_id' =>15, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
             ['name' => 'updateDepartmentTask', 'category_id' =>15, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
             ['name' => 'updateDepartmentTaskList', 'category_id' =>15, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
             ['name' => 'departmentTaskList', 'category_id' =>15, 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),'updated_at' => Carbon::now()->format('Y-m-d H:i:s')],
