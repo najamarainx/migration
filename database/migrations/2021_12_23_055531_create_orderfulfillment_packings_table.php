@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateOrderfulffillmentAssignAssembleUsersTable extends Migration
+class CreateOrderfulfillmentPackingsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateOrderfulffillmentAssignAssembleUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('orderfulffillment_assign_assemble_users', function (Blueprint $table) {
+        Schema::create('orderfulfillment_packings', function (Blueprint $table) {
             $table->id();
             $table->foreignId('order_id')->index('order_id')->constrained('orders');
             $table->foreignId('user_id')->index('user_id')->constrained('orderfulfillment_users');
@@ -31,8 +31,6 @@ class CreateOrderfulffillmentAssignAssembleUsersTable extends Migration
      */
     public function down()
     {
-        DB::statement('SET FOREIGN_KEY_CHECKS = 0');
-        Schema::dropIfExists('orderfulffillment_assign_assemble_users');
-        DB::statement('SET FOREIGN_KEY_CHECKS = 1');
+        Schema::dropIfExists('orderfulfillment_packings');
     }
 }
