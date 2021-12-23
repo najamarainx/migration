@@ -24,6 +24,7 @@ class CreateOrderfulfillmentUsersTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password', 191);
             $table->enum('type',['super_admin','developer','measurement','installation','customer_support','accountant','production_manager','team_lead','worker','screen','packaging','assembler'])->default('developer');
+            $table->tinyInteger('is_head')->default(1);
             $table->string('security_code', 150)->nullable();
             $table->string('photo', 250)->nullable();
             $table->boolean('is_active')->default(1);
