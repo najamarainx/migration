@@ -33,6 +33,7 @@ class CreateOrderfulfillmentUsersTable extends Migration
             $table->string('state', 255)->nullable();
             $table->string('city', 255)->nullable();
             $table->string('zip_code', 150)->nullable();
+            $table->tinyInteger('assembler_head')->nullable()->default(1);
             $table->text('address')->nullable();
             $table->rememberToken();
             $table->bigInteger('added_by')->nullable();
