@@ -18,6 +18,7 @@ class CreateOrderfulfillmentPaymentLogs extends Migration
             $table->foreignId('order_id')->index('order_id')->constrained('orders');
             $table->decimal('paid_amount',10,2)->nullable();
             $table->unsignedInteger('added_by')->nullable()->index();
+            $table->tinyInteger('is_verified')->default(0);
             $table->timestamps();
         });
     }
