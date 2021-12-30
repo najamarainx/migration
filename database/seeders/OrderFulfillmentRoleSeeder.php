@@ -61,6 +61,30 @@ class OrderFulfillmentRoleSeeder extends Seeder
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
         ];
         $id = DB::table('orderfulfillment_roles')->insertGetId($roleData);
-        
+        $roleData = [
+            'id' => 7,
+            'name' => 'Assembler',
+            'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+        ];
+        $id = DB::table('orderfulfillment_roles')->insertGetId($roleData);
+        $roleData = [
+            'id' => 7,
+            'name' => 'Packaging',
+            'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+        ];
+        $id = DB::table('orderfulfillment_roles')->insertGetId($roleData);
+        $roleData = [
+            'id' => 7,
+            'name' => 'Installation',
+            'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+        ];
+        $id = DB::table('orderfulfillment_roles')->insertGetId($roleData);
+        $roleData = [
+            'id' => 7,
+            'name' => 'Accountant',
+            'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
+        ];
+        $id = DB::table('orderfulfillment_roles')->insertGetId($roleData);
+
     }
 }
