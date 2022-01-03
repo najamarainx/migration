@@ -19,6 +19,7 @@ class CreateOrderfulfillmentPaymentLogs extends Migration
             $table->decimal('paid_amount',10,2)->nullable();
             $table->unsignedInteger('added_by')->nullable()->index();
             $table->tinyInteger('is_verified')->default(0);
+            $table->enum('payment_type',['cash','company_account','personal_account'])->default('company_account');
             $table->timestamps();
         });
     }
